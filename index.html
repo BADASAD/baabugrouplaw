@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CONVERT NUMBER | A Web of Baabu Group Law House</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img id="logo" src="logo.jpg" alt="Baabu Group Logo" />
+  <h1>📞 CONVERT NUMBER</h1>
+  <h3>A Web of Baabu Group Law House</h3>
+  <button id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
+  <input type="file" id="fileInput" accept=".txt,.csv" onchange="readFile(event)" />
+  <textarea id="inputText" placeholder="Paste or upload your full text here..."></textarea>
+  <input type="text" id="labelName" placeholder="Enter Label (e.g., TSO)" />
+  <br>
+  <button onclick="extractAndDisplay()">Extract Numbers</button>
+  <button onclick="copyToClipboard()">Copy to Clipboard</button>
+  <button onclick="downloadCSV()">Download CSV</button>
+  <button onclick="downloadXLSX()">Download Excel (.xlsx)</button>
+  <div id="count"></div>
+  <div class="output" id="outputBox"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
